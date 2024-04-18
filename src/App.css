@@ -1,38 +1,214 @@
-.App {
+brand-link {
+  text-decoration: none !important;
+}
+a {
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+  text-decoration: none;
+}
+.badge {
+  --bs-badge-padding-x: 0.65em;
+  --bs-badge-padding-y: 0.35em;
+  --bs-badge-font-size: 0.75em;
+  --bs-badge-font-weight: 700;
+  --bs-badge-color: #fff;
+  --bs-badge-border-radius: var(--bs-border-radius);
+  display: inline-block;
+  padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+  font-size: 7px;
+  /* font-weight: var(--bs-badge-font-weight); */
+  line-height: 1;
+  color: var(--bs-badge-color);
   text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: var(--bs-badge-border-radius);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.nav-item1 {
+  display: flex !important;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ffffffa5;
+  margin-left: 16px;
+}
+.element {
+  margin-top: 14px;
+}
+.dash-fonts {
+  color: black;
+}
+.mycontainer {
+  width: 600px;
+  margin: auto;
+  margin-top: 170px;
+}
+.product-icon {
+  font-size: 20px;
+  margin-right: 7px;
+  margin-left: 3px;
+}
+.mycontainer1 {
+  width: 800px;
+  margin-left: 470px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.check-item {
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  width: 635px;
+  margin-left: 10px;
+  padding: 10px;
+}
+.main-items {
+  /* margin-left: 20px; */
+  margin: 20px 0px 20px 20px;
+}
+.check-product-type {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.751);
+}
+.outer-image {
+  position: relative;
+  width: 191px;
+  height: 100%;
+  margin-bottom: 40px;
+}
+.outer-image img {
+  width: 191px;
+  height: 236px;
+}
+.inner-image {
+  position: absolute;
+  top: 0%;
+  width: 191px;
+  height: 236px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.outer-image:hover .inner-image {
+  opacity: 1;
+  cursor: pointer;
+}
+.section3-products-fonts span {
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.6;
+  margin: auto;
+}
+.section3-products-fonts h3 {
+  margin: 20px 0px 10px 0px;
+  text-transform: capitalize;
+  font-size: 16px;
+  width: 190px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+.section3-products-fonts {
+  text-align: center;
+  width: 191px;
+  position: relative;
+}
+.hovereffect-icons {
+  position: absolute;
+  z-index: 111;
+  top: 0%;
+  right: 5%;
+  opacity: 0;
+}
+.outer-image:hover .hovereffect-icons {
+  opacity: 1;
+  transition: 0.5s;
+}
+.outer-image:hover .star-reting {
+  display: none;
+  transition: 1s;
+}
+.outer-image:hover .section3-products-fonts > span {
+  display: none;
+  transition: 1s;
+}
+.outer-image:hover .QuickAdd {
+  visibility: visible;
+  transition: 1s;
+  top: 140%;
+}
+.mainthree-icon {
+  margin: 10px 0px;
+}
+.mainthree-icon {
+  background-color: #ffffff;
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: #0a5d5d;
+  transition: 0.3s;
+}
+.mainthree-icon:hover {
+  background-color: #0a5d5d;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.star-reting {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(222, 222, 10);
+  transition: 1s;
+}
+.QuickAdd {
+  margin-top: 10px;
+  position: absolute;
+  top: 100%;
+  left: 16%;
+  visibility: hidden;
+  /* transition: 1s; */
+}
+.QuickAdd a {
+  text-decoration: none;
+  color: #0a5d5d;
+  width: 150px;
+  border: 1px solid #0a5d5d;
+  border-radius: 3px;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.QuickAdd a:hover {
+  background-color: #0a5d5d;
+  color: #ffffff;
+  transition: 0.5s;
+}
+.products-fonts h3{
+  font-size: 20px;
+  margin: 15px 0px;
+}
+.product-price .first-span{
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 15px;
+}
+.product-price .second-span{
+  font-size: 15px;
+  opacity: 0.7;
+}
+.products-fonts p{
+  font-size: 15px;
+  margin: 15px 0px;
+}
+.change-card{
+  padding: 7px 15px;
+  border: none;
+  border: 1px solid #0A5D5D;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.change-card:hover{
+  background-color: #0A5D5D;
+  color: #ffffff;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.products-fonts>p{
+  word-wrap: break-word;
 }
