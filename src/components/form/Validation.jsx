@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { RiShoppingBag2Fill } from "react-icons/ri";
+import { IoEyeSharp } from "react-icons/io5";
+import { MdOutlineLibraryAdd } from "react-icons/md";
 
 const Validation = () => {
   return (
@@ -328,6 +331,34 @@ const Validation = () => {
                         <i className="far fa-circle nav-icon" />
                         <Link to="/jsGrid">
                           <p className="element">jsGrid</p>
+                        </Link>
+                      </li>
+                    </li>
+                  </ul>
+                </li>
+
+                <li className="nav-item">
+                  <a href="#" className="nav-link d-flex align-items-center">
+                    <RiShoppingBag2Fill className="product-icon" />
+                    <p className="d-flex align-items-center">
+                      Product Management
+                      <i className="fas fa-angle-left right" />
+                    </p>
+                  </a>
+                  <ul className="nav nav-treeview">
+                    <li className="nav-item">
+                      <li className="nav-item1">
+                        <MdOutlineLibraryAdd className="product-icon" />
+                        <Link to="/addproduct">
+                          <p className="element">Add Product</p>
+                        </Link>
+                      </li>
+                    </li>
+                    <li className="nav-item">
+                      <li className="nav-item1">
+                        <IoEyeSharp className="product-icon" />
+                        <Link to="/viewproduct">
+                          <p className="element">View Product</p>
                         </Link>
                       </li>
                     </li>
