@@ -110,7 +110,6 @@ const EditProduct = (props) => {
                       alt="Image"
                       multiple
                       onChange={updateImage}
-                      // onClick={updateImage}
                     />
                     <label htmlFor="InputImage">Title</label>
                     <input

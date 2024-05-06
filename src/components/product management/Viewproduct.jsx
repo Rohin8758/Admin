@@ -51,7 +51,7 @@ const Viewproduct = () => {
   return (
     <div>
       <EditProduct
-        show={modalShow2}
+        show={modalShow2}y
         onHide={() => setModalShow2(false)}
         productId={id}
       />
